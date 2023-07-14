@@ -1,7 +1,7 @@
 name: run bio app 
 on: [push]
 jobs:
-  fireup-microblog-app:
+  fireup-bio-app:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -9,7 +9,7 @@ jobs:
         with:
           node-version: '14'
       - run: git clone https://github.com/khanE11/bio
-      - run: cd flask_bio
+      - run: cd bio
       - run: python -m venv venv
       - run: source venv/bin/activate
       - run: pip install flask
