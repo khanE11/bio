@@ -2,3 +2,6 @@ __pycache__
 .flaskenv
 venv
 /Users/emalkhan/flask_bio/venv
+/Users/emalkhan/flask_bio/venv/bin
+/Users/emalkhan/flask_bio/venv/lib
+/Users/emalkhan/flask_bio/venv/pyvenv.cfg
