@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bio 
+  namespace: my_ns
+data:
+
+  {{- range $key, $val := .Values.common }}
+  {{ $key}}: {{ $val \ quote }}
+  {{- end }}

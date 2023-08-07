@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bio
+  namespace: my_ns
+  labels:
+    app: my_bio
+spec:
+  selector:
+    matchLabels:
+      app: my_bio
+  template:
+    metadata:
+      labels:
+        app: my_bio
+    spec:
+      containers:
+      - name: 
+        image: 
+        
+        env:
+        {{- range $key, $val := .Values.common}}
+        - name: {{ $key }}
+          valueFrom:
+            configMapKeyRef:
+              name: bio-app-configmap.yaml
+              key: {{ $key }}   
+        {{ -end }}
