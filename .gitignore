@@ -1,3 +1,6 @@
 __pycache__
 .flaskenv
 venv
+mychart/templates/tests/test-connection.yaml
+mychart/templates/_helpers.tpl
+mychart/templates/NOTES.txt
