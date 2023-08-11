@@ -1,4 +1,4 @@
 common:
   USER_NAME: "Bob"
   USER_WORK: "xyz company"
-  
+  Image_name: khane11/bio:latest
